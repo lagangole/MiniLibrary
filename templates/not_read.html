@@ -7,7 +7,7 @@
 </head>
 <body>
     <header>
-        <h1>Books in your library</h1>
+        <h1>Your Library</h1>
     </header>
     <nav>
         <ul>
@@ -23,9 +23,23 @@
         </ul>
     </nav>
     <main>
-        <h2>Welcome</h2>
-        <p>This website attempts to explain some of the web tags, what they do, and how to use them</p>
-        <p>We also will look at how to make the page look better using cascading Style Sheets.</p>
+        <h2>Not Read</h2>
+        <table>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Description</th>
+                <th>Published Year</th>
+            </tr>
+                {% for book in books %}
+                <tr>
+                    <td>{{ book[0] }}</td>
+                    <td>{{ book[1] }}</td>
+                    <td>{{ book[2] }}</td>
+                    <td>{{ book[3] }}</td>
+                </tr>
+                {% endfor %}
+        </table>
     </main>
     <footer>
         <p>&copy; D Benseman 2022</p>
