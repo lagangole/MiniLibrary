@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mini Library</title>
+    <link type="text/css" rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Books in your library</h1>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="/">Home</a>
+            </li>
+            <li>
+                <a href="/read/1">Read</a>
+            </li>
+            <li>
+                <a href="/read/0">Not read</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        {% block main %}{% endblock %}
+    </main>
+
+    <footer>
+        <p>&copy; D Benseman 2022</p>
+    </footer>
+</body>
+</html>
