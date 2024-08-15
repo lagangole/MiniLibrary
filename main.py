@@ -24,7 +24,7 @@ def render_home():
 
 @app.route('/read')
 def render_read():
-    query = "SELECT title, description, published_year FROM books WHERE read = 1"
+    query = "SELECT title, author, description, published_year FROM books WHERE read = 1"
     con = create_connection(DATABASE)
     print(con)
     cur = con.cursor()
